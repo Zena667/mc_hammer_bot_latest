@@ -21,6 +21,7 @@ h1 {
 	background:blue;
 	border-radius:10px;
 	padding:10px;
+	overflow:hidden;
 }
 
 .Q, .W, .E, .A, .S, .D {
