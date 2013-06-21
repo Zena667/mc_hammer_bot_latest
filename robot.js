@@ -12,9 +12,10 @@ $(document).ready (function() {
 					// user presses the "Q" STRAFE LEFT
 					case 81: 	$(".Q").addClass("active");
 						$(document).keyup(function(e){
+						$.ajax({url: "http://localhost:8071/motion-control/update", data: {forward: 1}, dataType: "jsonp"});
+						  console.log("hello")
+						});	
 						$(".Q").removeClass("active");
-						// $.ajax({url: "127.0.0.1:8071/motion-control/update", data: {forward: 1}, dataType: "jsonp"});
-						});
 						
 						break; 
 								
