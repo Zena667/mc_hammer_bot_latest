@@ -1,12 +1,26 @@
+body{
+	background-color:lightblue;
+	opacity:0.4;
+	width: 100%;
+}
+
 h1 {
-	font-family: helvetica;
+	font-family: Helvetia;
 	font-size: 32px;
 	text-align: center;
+	color:blue;
 }
 
 .container {
-	width: 80%;
+	width: 60%;
+	height:400px;
+	/*position:fixed;*/
+	bottom:20px;
+	right:20px;
 	margin: auto;
+	background:blue;
+	border-radius:10px;
+	padding:10px;
 }
 
 .Q, .W, .E, .A, .S, .D {
@@ -17,8 +31,9 @@ h1 {
 	background-color: lightblue;
 	text-align: center;
 	margin-top:20px;
-	border-radius:20px;
+	border-radius:10px;
 	-webkit-transition: all 0.4s;
+
 } 
 .Q, .E{
 	opacity:0.4;
@@ -33,8 +48,10 @@ span {
 	border: 10px;
 	background-color: darkblue;
 }
-
-.X {
-	width: 26%;
-	float: right;
+video{
+	width:100%;
+	height:auto;
+	background:white;
+	margin:auto;
+	clear:both;
 }
