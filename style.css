@@ -10,21 +10,28 @@ h1 {
 }
 
 .Q, .W, .E, .A, .S, .D {
-	width: 26%;
+	width: 29%;
 	border: 2px;
 	margin: 2%;
 	float: left;
 	background-color: lightblue;
 	text-align: center;
+	margin-top:20px;
+	border-radius:20px;
+	-webkit-transition: all 0.4s;
 } 
+.Q, .E{
+	opacity:0.4;
+}
 
 span {
 	color: white;
+	display:none;
 }
 
 .active {
 	border: 10px;
-	background-color: red;
+	background-color: darkblue;
 }
 
 .X {

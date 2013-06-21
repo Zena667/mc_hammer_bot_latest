@@ -10,8 +10,11 @@
 	</head>
 
 	<body>
+		<h1>Hammer the Bot</h1>
+
 
 		<div class="container">
+			<p>To steer the Bot press...</p>
 				<div class="Q"><span>Strafe Left</span></div>
 				<div class="W"><span>Forward</span></div>
 				<div class="E"><span>Strafe Right</span></div>
@@ -25,12 +28,12 @@
 
 	  <script>
 	  	$('.Q, .W, .E, .A, .S, .D').css('height', function() {
-	  			return $(window).height() * 0.4;
+	  			return $('.Q').width();
 	  			});
 	  	$(window).resize(function() {
 	  		$('.container').css('height', $(document).height());
 	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
-	  			return $(window).height() * 0.4;
+	  			return $('.Q').width();
 	  		});
 	  	});
 	  </script>
