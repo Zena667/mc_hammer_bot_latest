@@ -1,0 +1,33 @@
+h1 {
+	font-family: helvetica;
+	font-size: 32px;
+	text-align: center;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.Q, .W, .E, .A, .S, .D {
+	width: 26%;
+	border: 2px;
+	margin: 2%;
+	float: left;
+	background-color: lightblue;
+	text-align: center;
+} 
+
+span {
+	color: white;
+}
+
+.active {
+	border: 10px;
+	background-color: red;
+}
+
+.X {
+	width: 26%;
+	float: right;
+}

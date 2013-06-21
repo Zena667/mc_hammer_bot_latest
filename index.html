@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>MC Hammer Bot</title>
+	</head>
+
+	<body>
+
+		<div class="container">
+				<div class="Q"><span>Strafe Left</span></div>
+				<div class="W"><span>Forward</span></div>
+				<div class="E"><span>Strafe Right</span></div>
+				<div class="A"><span>Left</span></div>
+				<div class="S"><span>Reverse</span></div>
+				<div class="D"><span>Right</span></div> 
+				<div class="X"><span>STOP</span></div> 
+		</div>
+
+	  <script src="robot.js"></script>
+
+	  <script>
+	  	$('.Q, .W, .E, .A, .S, .D').css('height', function() {
+	  			return $(window).height() * 0.4;
+	  			});
+	  	$(window).resize(function() {
+	  		$('.container').css('height', $(document).height());
+	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
+	  			return $(window).height() * 0.4;
+	  		});
+	  	});
+	  </script>
+	</body>
+</html>      
