@@ -5,9 +5,9 @@ $(document).ready(function() {
 			case 81:
 				$(".Q").addClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
-						strafe: -1
+						strafe: 1
 					},
 					dataType: "jsonp"
 				});
@@ -17,7 +17,7 @@ $(document).ready(function() {
 			case 87:
 				$(".W").addClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
 						forward: 1
 					},
@@ -29,9 +29,9 @@ $(document).ready(function() {
 			case 69:
 				$(".E").addClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
-						strafe: 1
+						strafe: -1
 					},
 					dataType: "jsonp"
 				});
@@ -41,9 +41,9 @@ $(document).ready(function() {
 			case 65:
 				$(".A").addClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
-						forward: -1
+						turn: -1
 					},
 					dataType: "jsonp"
 				});
@@ -53,9 +53,9 @@ $(document).ready(function() {
 			case 83:
 				$(".S").addClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
-						strafe: -1
+						forward: -1
 					},
 					dataType: "jsonp"
 				});
@@ -65,7 +65,7 @@ $(document).ready(function() {
 			case 68:
 				$(".D").addClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
 						turn: 1
 					},
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			case 81:
 				$(".Q").removeClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
 						strafe: 0
 					},
@@ -93,7 +93,7 @@ $(document).ready(function() {
 			case 87:
 				$(".W").removeClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
 						forward: 0
 					},
@@ -105,7 +105,7 @@ $(document).ready(function() {
 			case 69:
 				$(".E").removeClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
 						strafe: 0
 					},
@@ -117,7 +117,7 @@ $(document).ready(function() {
 			case 65:
 				$(".A").removeClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
 						forward: 0
 					},
@@ -129,9 +129,9 @@ $(document).ready(function() {
 			case 83:
 				$(".S").removeClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
-						strafe: -1
+						strafe: 0
 					},
 					dataType: "jsonp"
 				});
@@ -141,9 +141,9 @@ $(document).ready(function() {
 			case 68:
 				$(".D").removeClass("active");
 				$.ajax({
-					url: "http://localhost:8071/motion-control/update",
+					url: "http://192.168.0.105:8071/motion-control/update",
 					data: {
-						turn: 1
+						turn: 0
 					},
 					dataType: "jsonp"
 				});
