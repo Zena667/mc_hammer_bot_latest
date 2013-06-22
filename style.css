@@ -49,10 +49,29 @@ span {
 	border: 10px;
 	background-color: darkblue;
 }
-video{
+
+
+/*video{
 	width:100%;
 	height:auto;
 	background:white;
 	margin:auto;
 	clear:both;
+}*/
+
+/*iframe {
+	padding: 2px 0px 4px; 
+	width: 400px; 
+	background: #ffffff; 
+	display: block; 
+	color: #000000; 
+	font-weight: normal; 
+	font-size: 10px; 
+	text-decoration: underline; 
+	text-align: center;
+	border: 0px none transparent;
 }
+*/
+
+
+
