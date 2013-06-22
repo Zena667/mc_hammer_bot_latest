@@ -8,19 +8,19 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src='fittext/fittext.js'></script>
+		<script src='fitvid/fitvid.js'></script>
 		<title>MC Hammer Bot</title>
 	</head>
 
 	<body>
-		<h1>Hammer the Bot</h1>
-
-		
-
+		<div id="title">
+			<h1>Hammer the Bot</h1>
+		</div>
 
 		<div class="container">
-		<!-- <video src=""> -->
-			<iframe src="http://www.ustream.tv/embed/14936789" width="608" height="368" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe></a>
-		<!-- </video> -->
+		
+			<iframe src="http://www.ustream.tv/embed/14936789" width="608" height="368" scrolling="no" frameborder="0" style="border: 0px none transparent;overflow:hidden"></iframe>
+	
 			<div id='commands'>
 				<div class="Q"><span>Strafe Left</span></div>
 				<div class="W"><span>Forward</span></div>
@@ -36,23 +36,41 @@
 	  <script src="robot.js"></script>
 		<!-- making stuff responsive -->
 	  <script>
-	  	$(window).resize(function() {
-	  	$('.container').css('height', $(window).width() * 0.6);
-	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
-	  			return ($('.container').width() * 0.2);
-	  		});
-	  	$('.Q, .W, .E, .A, .S, .D').css('height', function() {
-	  			return $('.Q').width() * 4.5;
-	  			});
-	  	$('.container').css('max-height', function() {
-	  			return $('.Q').width() * 4.5;
-	  			});
-	  	
 
+	  		$('.container').css('height', $(window).height() * 0.9);
+	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
+	  			return ($('#commands').height()*0.6);
+	  		});
+	  		$('#commands').css('width', function() {
+	  			return ($('.container').width() * 0.6);
+	  		});
+	  		$('#commands').css('height', function() {
+	  			return ($('.container').height() * 0.2);
+	  		});
+	  		$('iframe').css('height', function() {
+	  			return ($('.container').height() * 0.6);
+	  		});
+	  
+	  	$(window).resize(function() {
+	  		$('.container').css('height', $(window).height() * 0.9);
+	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
+	  			return ($('#commands').height()*0.6);
+	  		});
+	  		$('#commands').css('width', function() {
+	  			return ($('.container').width() * 0.6);
+	  		});
+	  		$('#commands').css('height', function() {
+	  			return ($('.container').height() * 0.2);
+	  		});
+	  		$('iframe').css('height', function() {
+	  			return ($('.container').height() * 0.6);
+	  		});
 	  	});
+	  	
 	  </script>
 	  <script>
   		jQuery("h1").fitText();
+  		jQuery("iframe").fitVids();
 		</script>
 	</body>
 </html>      
