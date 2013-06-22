@@ -1,7 +1,7 @@
-$ document.ready ->
-	$ document.keydown = (e) ->
+jQuery ->
+	$(document).keydown (e) ->
 		adress = "http://192.168.0.105:8071/motion-control/update"
-		key = e.which
+		key = e.which 
 		if key is 81
 			$(".Q").addClass('active')
 			$.ajax 
@@ -44,12 +44,14 @@ $ document.ready ->
 				data:
 					turn: 1
 				dataType: "jsonp"
-	$ document.keyup = (e) ->
-			$(".Q,.S,.D,.A,.E,.W").removeClass('active')
-			$.ajax 
-				url: adress
-				data:
-					forward: 0
-				dataType: "jsonp"
+	$(document).keyup (e) ->
+		adress = "http://192.168.0.105:8071/motion-control/update"
+		key = e.which
+		$(".Q,.S,.D,.A,.E,.W").removeClass('active')
+		$.ajax 
+			url: adress
+			data:
+				forward: 0
+			dataType: "jsonp"
 		
 
