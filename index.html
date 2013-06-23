@@ -22,13 +22,12 @@
 			<iframe src="http://www.ustream.tv/embed/14936789" width="608" height="368" scrolling="no" frameborder="0" style="border: 0px none transparent;overflow:hidden"></iframe>
 	
 			<div id='commands'>
-				<div class="Q"><span>Strafe Left</span></div>
-				<div class="W"><span>Forward</span></div>
-				<div class="E"><span>Strafe Right</span></div>
-				<div class="A"><span>Left</span></div>
-				<div class="S"><span>Reverse</span></div>
-				<div class="D"><span>Right</span></div> 
-				<div class="X"><span>STOP</span></div> 
+				<div class="Q"><span>U</span></div>
+				<div class="W"><span>S</span></div>
+				<div class="E"><span>W</span></div>
+				<div class="A"><span>R</span></div>
+				<div class="S"><span>T</span></div>
+				<div class="D"><span>Q</span></div>
 			</div>
 		</div>
 		
@@ -36,25 +35,26 @@
 	  <script src="js/robot.js"></script>
 		<!-- making stuff responsive -->
 	  <script>
-
+	  // $(document).ready(function(){
+	  	$(window).load(function() {
 	  		$('.container').css('height', $(window).height() * 0.9);
-	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
-	  			return ($('#commands').height()*0.6);
-	  		});
 	  		$('#commands').css('width', function() {
 	  			return ($('.container').width() * 0.6);
 	  		});
 	  		$('#commands').css('height', function() {
 	  			return ($('.container').height() * 0.2);
 	  		});
+	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
+	  			return ($('#commands').height() * 0.6);
+	  		});
 	  		$('iframe').css('height', function() {
 	  			return ($('.container').height() * 0.6);
 	  		});
-	  
+	  	});
 	  	$(window).resize(function() {
 	  		$('.container').css('height', $(window).height() * 0.9);
 	  		$('.Q, .W, .E, .A, .S, .D').css('height', function() {
-	  			return ($('#commands').height()*0.6);
+	  			return ($('#commands').height() * 0.6);
 	  		});
 	  		$('#commands').css('width', function() {
 	  			return ($('.container').width() * 0.6);

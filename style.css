@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "arrows";
+  src: url("arrows/Arrows.ttf");
+  src: local(""),
+    url("arrows/Arrows.ttf") format("ttf"),
+    url("arrows/Arrows.ttf") format("otf");
+  }
 body{
 	background-color:#3D3D7F;
 	/*opacity:0.4;*/
@@ -39,15 +46,19 @@ h1 {
 	text-align: center;
 	margin-top:20px;
 	border-radius:10px;
+  	color: white;
+	font-family: 'arrows';
+  	font-size: 48px;
 } 
 .Q, .E{
 	opacity:0.4;
 }
 
-span {
+/*span {
 	color: white;
-	display:none;
-}
+	font-family: 'Arrows', serif;
+  	font-size: 48px;
+}*/
 
 .active {
 	border: 10px;
